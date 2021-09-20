@@ -1,0 +1,31 @@
+.works {
+  padding: 40px 0 0 0;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+.works__title {
+  margin: 20px 0 40px 0;
+}
+
+.works__list {
+  margin: 0 0 40px 0  ;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  row-gap: 10px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+  }
+}
+
+.works__item {
+  justify-self: center;
+}
+
+.button--works {
+  margin: 0 auto;
+  color: @basic-purpule;
+}

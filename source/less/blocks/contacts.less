@@ -1,0 +1,83 @@
+.contacts {
+  background-color: @basic-purpule;
+  padding: 2% 0;
+  border-radius: 30px;
+  box-sizing: border-box;
+
+}
+//Form
+.contacts__info {
+  background-color: @basic-light-grey;
+  border-radius: 30px;
+  width: 96%;
+  margin: 0 auto 50px auto;
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+
+.contacts__title {
+  margin: 10px 0;
+}
+
+.contacts__desc {
+  margin: 0 0 40px 0;
+  color: @basic-grey;
+}
+
+.contacts__form {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.communication {
+  background-color: @basic-white;
+  border-radius: 15px;
+}
+
+.communication__title {
+  font: inherit;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+.communication__name,
+.communication__email,
+.communication__text {
+  outline: none;
+  border-radius: 15px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid;
+
+  &:focus {
+    border-color: @basic-purpule;
+  }
+}
+
+.communication__text {
+  resize: none;
+  margin: 0 0 10px 0;
+}
+
+.button--communication {
+  width: 100%;
+  background-color: @basic-purpule;
+}
+
+//Block social
+
+.contacts-social__title {
+  color: @basic-white;
+}
+
+.contacts-social__desc {
+  color: @basic-grey;
+}
+
+.contacts-social__list {
+  display: flex;
+  justify-content: space-between;
+}
+
