@@ -1,0 +1,77 @@
+.project {
+  border-radius: 15px;
+  border: 1px solid transparent;
+  background-color: @basic-purpule;
+  max-width: 360px;
+  position: relative;
+  box-sizing: border-box;
+
+  &:hover .project__img,
+  &:focus .project__img{
+    filter: brightness(33%)
+  }
+
+  &:hover .project__title,
+  &:focus .project__title {
+    color: @basic-black;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: @basic-white;
+    border: 1px solid @basic-black;
+    box-sizing: border-box;
+  }
+
+  &:hover .project__link,
+  &:focus .project__link {
+    display: block;
+    position: absolute;
+    top: 23%;
+    left: 35%;
+  }
+
+  &:hover .project__view,
+  &:focus .project__view {
+    display: block;
+    position: absolute;
+    top: 23%;
+    right: 35%;
+  }
+}
+
+.project__img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.project__info {
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.project__title {
+  margin: 0 0 10px 0;
+  color: @basic-white;
+  text-transform: capitalize;
+  font: inherit;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.project__desc {
+  margin: 0;
+  color: @basic-grey;
+}
+
+.project__link,
+.project__view {
+  display: none;
+  fill: @basic-white;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+}

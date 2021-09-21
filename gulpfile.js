@@ -6,6 +6,7 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
+const del = require("del");
 const sync = require("browser-sync").create();
 
 const styles = () => {
@@ -23,6 +24,26 @@ const styles = () => {
 }
 
 exports.styles = styles;
+
+//Copy
+
+const copy = (done) => {
+  gulp.src("source/**/*.*"
+    , {
+      base: "source"
+    })
+    .pipe(gulp.dest("."))
+  done();
+}
+
+exports.copy = copy;
+
+//Clean
+
+const clean = () => {
+  return del("build")
+}
+exports.clean = clean;
 
 const server = (done) => {
   sync.init({
@@ -48,5 +69,11 @@ const watcher = () => {
   gulp.watch("source/js/main.js").on("change", sync.reload);
   gulp.watch("source/*.html").on("change", sync.reload);
 }
+
+const pages = gulp.series(
+  styles,
+  copy
+)
+exports.pages = pages;
 
 exports.default = gulp.series(styles, server, watcher);
