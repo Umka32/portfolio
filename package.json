@@ -11,6 +11,7 @@
     "postcss-csso": "^5.0.1"
   },
   "scripts": {
+    "pages": "gulp pages",
     "start": "gulp"
   },
   "engines": {

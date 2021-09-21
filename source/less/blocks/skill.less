@@ -14,6 +14,18 @@
   box-sizing: border-box;
 }
 
+.info__wrapper {
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    column-gap: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    column-gap: 80px;
+  }
+}
+
 .skill__title {
   margin: 10px 0;
 }
@@ -21,15 +33,47 @@
 .skill__desc {
   margin: 0;
 }
+
 .skill__list {
   padding: 0;
   margin: 30px 0 0 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: flex-end;
+  }
 }
+
 .skill__card {
   background-color: @basic-white;
   text-align: center;
   border-radius: 10px;
+  width: 149px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    &:nth-child(odd) {
+      align-self: flex-start;
+      margin: 0;
+    }
+
+    &:nth-child(even) {
+      align-self: center;
+      margin: 40px 0 0 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 170px;
+  }
 }
 
 //Statictics blocks
@@ -38,12 +82,22 @@
   padding: 0;
   margin: 20px 0 0 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .stat__item {
   text-align: center;
   width: 150px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 100px;
+    margin: 0;
+  }
 }
 
 .stat__number {

@@ -1,5 +1,9 @@
 .main-nav--closed {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .main-nav__list {
@@ -11,4 +15,10 @@
 .main-nav__item a {
   color: @basic-white;
   text-decoration: none;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
 }
