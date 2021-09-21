@@ -13,13 +13,13 @@
 <body class="page__body">
   <header class="page-header">
     <div class="wrapper wrapper--header">
-      <a href="#">
-        <svg class="page-header__logo logo">
+      <a class="page-header__logo" href="#">
+        <svg class="logo">
           <use xlink:href="img/icons/sprite.svg#logo"></use>
         </svg>
       </a>
       <nav class="page-header__nav main-nav main-nav--closed">
-        <ul class="main-nav__list">
+        <ul class="main-nav__list page-header__list">
           <li class="main-nav__item"><a href="#">Aboute</a></li>
           <li class="main-nav__item"><a href="#">Service</a></li>
           <li class="main-nav__item"><a href="#">Портфолио</a></li>
@@ -29,21 +29,21 @@
       </nav>
       <ul class="page-header__social social__list">
         <li class="social__item">
-          <a href="#">
+          <a class="page-header__link" href="https://instagram.com/sergey32007" target="_blank">
             <svg class="social__img">
               <use xlink:href="img/icons/sprite.svg#icon-inst"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a href="#">
+          <a class="page-header__link" href="https://wa.me/79307297015" target="_blank">
             <svg class="social__img">
               <use xlink:href="img/icons/sprite.svg#icon-wta"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a href="#">
+          <a class="page-header__link" href="#">
             <svg class="social__img">
               <use xlink:href="img/icons/sprite.svg#icon-fb"></use>
             </svg>
@@ -57,7 +57,7 @@
   <main>
     <h1 class="visually-hidden">Портфолио по созданию сайтов</h1>
     <section class="promo">
-      <div class="wrapper">
+      <div class="wrapper promo__wrapper">
         <h2 class="visually-hidden">Промо</h2>
         <h3 class="promo__subtitle subtitle">Портфолио</h3>
         <p class="promo__slogan">привет, я&nbsp;сергей</p>
@@ -65,15 +65,15 @@
           nisi,
           perferendis porro exercitationem quas eligendi perspiciatis numquam.</p>
         <nav class="promo__nav">
-          <a href="#" class="button button--aboute">История</a>
-          <a href="#" class="button">Скачать резюме</a>
+          <a href="#aboute" class="button button--aboute">История</a>
+          <a href="file/resume.pdf" class="button" download="">Скачать резюме</a>
         </nav>
       </div>
       <img class="promo__photo" src="img/photo.png" alt="фото Сергея">
     </section>
 
-    <section class="expertise">
-      <div class="wrapper wrapper--expertise">
+    <section class="expertise" id="aboute">
+      <div class="wrapper expertise__wrapper">
         <h3 class="expertise__subtitle subtitle">My expertise</h3>
         <h2 class="expertise__title title">innovative<br>solutions</h2>
         <p class="expertise__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quis, incidunt
@@ -111,14 +111,16 @@
 
     <section class="skill">
       <div class="skill__info">
-        <div class="wrapper">
-          <h3 class="skill__subtitle subtitle">My skills</h3>
-          <h2 class="skill__title title">Beautiful and unique digital experiences</h2>
-          <p class="skill__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ab recusandae
-            dolores
-            repellendus modi asperiores labore et! Fugiat ducimus minus, earum nulla ipsam id, quasi necessitatibus
-            eligendi
-            perspiciatis, quas eaque.</p>
+        <div class="wrapper info__wrapper">
+          <div class="wrapper__text">
+            <h3 class="skill__subtitle subtitle">My skills</h3>
+            <h2 class="skill__title title">Beautiful and unique digital experiences</h2>
+            <p class="skill__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ab recusandae
+              dolores
+              repellendus modi asperiores labore et! Fugiat ducimus minus, earum nulla ipsam id, quasi necessitatibus
+              eligendi
+              perspiciatis, quas eaque.</p>
+          </div>
           <ul class="skill__list">
             <li class="skill__item skill__card">
               <img src="" alt="">
@@ -254,8 +256,26 @@
               </svg>
             </a>
           </article>
+          <article class="works__item project">
+            <img class="project__img" src="img/coming-soon.jpeg" alt="Скоро будет новый проект">
+            <div class="project__info">
+              <h4 class="project__title">Title</h4>
+              <p class="project__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur excepturi
+                molestiae explicabo ad!</p>
+            </div>
+            <a href="#" target="_blank" class="project__link" type="button">
+              <svg width="28" height="28">
+                <use xlink:href="img/icons/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a class="project__view" type="button">
+              <svg width="28" height="28">
+                <use xlink:href="img/icons/sprite.svg#icon-view"></use>
+              </svg>
+            </a>
+          </article>
         </div>
-        <button class="button button--works">All works</button>
+        <button class="button button--works">Ещё</button>
       </div>
     </section>
 
@@ -327,13 +347,15 @@
 
     <section class="contacts">
       <div class="contacts__info">
-        <div class="wrapper">
-          <h3 class="contacts__subtitle subtitle">contact</h3>
-          <h2 class="contacts__title title">get in touch</h2>
-          <p class="contacts__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus omnis, labore,
-            reprehenderit molestias sapiente consectetur saepe voluptate quos, consequuntur at numquam? Aut architecto
-            est
-            beatae mollitia tempora esse sed pariatur!</p>
+        <div class="wrapper contacts__wrapper">
+          <div class="wrapper__text">
+            <h3 class="contacts__subtitle subtitle">contact</h3>
+            <h2 class="contacts__title title">get in touch</h2>
+            <p class="contacts__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus omnis, labore,
+              reprehenderit molestias sapiente consectetur saepe voluptate quos, consequuntur at numquam? Aut architecto
+              est
+              beatae mollitia tempora esse sed pariatur!</p>
+          </div>
           <form class="contacts__form communication" action="#" method="POST">
             <h4 class="communication__title">Остались вопросы?</h4>
             <p>
@@ -353,25 +375,27 @@
         </div>
       </div>
       <div class="wrapper contacts-social">
-        <h2 class="contacts-social__title title">social media</h2>
-        <p class="contacts-social__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <div class="wrapper__text">
+          <h2 class="contacts-social__title title">social media</h2>
+          <p class="contacts-social__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
         <ul class="contacts-social__list social__list">
           <li class="social__item">
-            <a href="#">
+            <a class="contacts__link" href="https://instagram.com/sergey32007" target="_blank">
               <svg class="social__img social__img--contacts">
                 <use xlink:href="img/icons/sprite.svg#icon-inst"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a href="#">
+            <a class="contacts__link" href="https://wa.me/79307297015" target="_blank">
               <svg class="social__img social__img--contacts">
                 <use xlink:href="img/icons/sprite.svg#icon-wta"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a href="#">
+            <a class="contacts__link" href="#">
               <svg class="social__img social__img--contacts">
                 <use xlink:href="img/icons/sprite.svg#icon-fb"></use>
               </svg>
@@ -386,14 +410,16 @@
   <footer class="page-footer">
     <div class="footer-top">
       <div class="wrapper">
-        <a href="#">
-          <svg class="logo">
-            <use xlink:href="img/icons/sprite.svg#logo"></use>
-          </svg>
-        </a>
-        <p class="footer-top__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum reprehenderit minima
-          unde et nesciunt voluptatum
-          cupiditate?</p>
+        <div class="wrapper__text">
+          <a class="page-footer__logo" href="#">
+            <svg class="logo">
+              <use xlink:href="img/icons/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <p class="footer-top__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum reprehenderit minima
+            unde et nesciunt voluptatum
+            cupiditate?</p>
+        </div>
         <nav class="main-nav footer-top__nav">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="#">Aboute</a></li>
@@ -403,9 +429,11 @@
             <li class="main-nav__item"><a href="#">Контакты</a></li>
           </ul>
         </nav>
-        <div>
+        <div class="page-footer__contacts">
           <h2 class="subtitle">contact</h2>
-          <a class="footer-top__email" href="mailto:matan32@mail.ru">matan32@mail.ru</a>
+          <p>
+            <a class="footer-top__email" href="mailto:matan32@mail.ru">ymanety@gmail.com</a>
+          </p>
         </div>
       </div>
     </div>

@@ -3,8 +3,19 @@
   padding: 2% 0;
   border-radius: 30px;
   box-sizing: border-box;
-
 }
+
+.contacts__wrapper {
+  @media (min-width:@tablet-width) {
+    display: flex;
+    column-gap: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    column-gap: 80px;
+  }
+}
+
 //Form
 .contacts__info {
   background-color: @basic-light-grey;
@@ -27,6 +38,10 @@
 .contacts__form {
   padding: 20px;
   box-sizing: border-box;
+
+  @media (min-width:@tablet-width) {
+    flex: 1;
+  }
 }
 
 .communication {
@@ -68,12 +83,29 @@
 
 //Block social
 
+.contacts-social {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .contacts-social__title {
   color: @basic-white;
 }
 
 .contacts-social__desc {
   color: @basic-grey;
+  margin: 16px 0 0 0;
+}
+
+.contacts__link {
+  outline: none;
+
+  &:focus {
+    cursor: pointer;
+    opacity: 0.6;
+  }
 }
 
 .contacts-social__list {

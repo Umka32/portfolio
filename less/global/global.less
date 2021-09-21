@@ -25,6 +25,12 @@ img {
   }
 }
 
+.wrapper__text {
+  @media (min-width:@tablet-width) {
+    flex: 1;
+  }
+}
+
 .title {
   font: inherit;
   font-size: 28px;
@@ -52,9 +58,10 @@ img {
   font: inherit;
   color:@basic-white;
   text-align: center;
+  outline: none;
 
   &:hover,
-  &focus {
+  &:focus {
     border-color: @basic-white;
     color: @basic-grey;
   }
