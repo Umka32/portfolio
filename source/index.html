@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
   <script defer src="js/main.js"></script>
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
   <title>Портфолио SG</title>
 </head>
 
@@ -20,11 +21,11 @@
       </a>
       <nav class="page-header__nav main-nav main-nav--closed">
         <ul class="main-nav__list page-header__list">
-          <li class="main-nav__item"><a href="#">Aboute</a></li>
-          <li class="main-nav__item"><a href="#">Service</a></li>
-          <li class="main-nav__item"><a href="#">Портфолио</a></li>
-          <li class="main-nav__item"><a href="#">Блог</a></li>
-          <li class="main-nav__item"><a href="#">Контакты</a></li>
+          <li class="main-nav__item main-nav__item--disabled"><a href="#aboute">Aboute</a></li>
+          <li class="main-nav__item main-nav__item--disabled"><a href="#">Service</a></li>
+          <li class="main-nav__item"><a href="#works">Портфолио</a></li>
+          <li class="main-nav__item main-nav__item--disabled"><a href="#">Блог</a></li>
+          <li class="main-nav__item"><a href="#contacts">Контакты</a></li>
         </ul>
       </nav>
       <ul class="page-header__social social__list">
@@ -59,13 +60,15 @@
     <section class="promo">
       <div class="wrapper promo__wrapper">
         <h2 class="visually-hidden">Промо</h2>
-        <h3 class="promo__subtitle subtitle">Портфолио</h3>
+        <h3 class="promo__subtitle subtitle">Интро</h3>
         <p class="promo__slogan">привет, я&nbsp;сергей</p>
-        <p class="promo__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, hic quas! Sapiente eius
-          nisi,
-          perferendis porro exercitationem quas eligendi perspiciatis numquam.</p>
+        <p class="promo__desc">Начинающий Frontend-разработчик. С&nbsp;мая 2021 активно осваиваю html, css. Верстаю
+          кроссбраузерно и&nbsp;адаптивно, используя Grid и&nbsp;Flex. Основные знания получил из&nbsp;курсов
+          HtmlAcademy
+          и&nbsp;GeekBrains.
+        </p>
         <nav class="promo__nav">
-          <a href="#aboute" class="button button--aboute">История</a>
+          <a href="#works" class="button button--aboute">Примеры</a>
           <a href="file/resume.pdf" class="button" download="">Скачать резюме</a>
         </nav>
       </div>
@@ -75,7 +78,7 @@
     <section class="expertise" id="aboute">
       <div class="wrapper expertise__wrapper">
         <h3 class="expertise__subtitle subtitle">My expertise</h3>
-        <h2 class="expertise__title title">innovative<br>solutions</h2>
+        <h2 class="expertise__title title">Рыбный<br>заголовок</h2>
         <p class="expertise__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quis, incidunt
           necessitatibus
           esse, obcaecati fugiat hic, facere aut eius accusamus error velit pariatur commodi odio omnis! Labore ipsum
@@ -83,7 +86,7 @@
           odio?</p>
         <ul class="expertise__list">
           <li class="expertise__item experience-card">
-            <h3 class="experience-card__title">Web Design</h3>
+            <h3 class="experience-card__title">Рыбный заголовок</h3>
             <p class="experience-card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem ex
               eligendi
               quam iste sequi facilis, animi beatae nam, rerum ad nulla voluptates, doloribus non voluptatibus.
@@ -91,14 +94,14 @@
               mollitia veritatis autem?</p>
           </li>
           <li class="expertise__item experience-card">
-            <h3 class="experience-card__title">Branding</h3>
+            <h3 class="experience-card__title">Рыбный заголовок</h3>
             <p class="experience-card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
               libero,
               reiciendis, architecto ipsa nulla placeat aliquid, neque sed dolores maxime sint nihil repudiandae. Sed
               repudiandae nihil vel ut facilis commodi.</p>
           </li>
           <li class="expertise__item experience-card">
-            <h3 class="experience-card__title">Marketing</h3>
+            <h3 class="experience-card__title">Рыбный заголовок</h3>
             <p class="experience-card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
               perferendis
               illo
@@ -113,30 +116,32 @@
       <div class="skill__info">
         <div class="wrapper info__wrapper">
           <div class="wrapper__text">
-            <h3 class="skill__subtitle subtitle">My skills</h3>
-            <h2 class="skill__title title">Beautiful and unique digital experiences</h2>
-            <p class="skill__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ab recusandae
-              dolores
-              repellendus modi asperiores labore et! Fugiat ducimus minus, earum nulla ipsam id, quasi necessitatibus
-              eligendi
-              perspiciatis, quas eaque.</p>
+            <h3 class="skill__subtitle subtitle">Мои навыки</h3>
+            <h2 class="skill__title title">Большой и длинный рыбный заголовок</h2>
+            <p class="skill__desc">Техническое образование и&nbsp;опыт работы менеджером It-проектов позволяет легче
+              осваивать новые технологии. Верстаю по&nbsp;макетам из&nbsp;<b>Figma</b>, есть опты работы
+              с&nbsp;Photoshop.
+              В&nbsp;процессе обучения познакомился и&nbsp;применяю препроцессор <b>Less</b>. <b>Gulp</b> использую для
+              минификации
+              кода и&nbsp;оптимизации изображений. Для контроля версий использую <b>Git</b>. Стараюсь придерживаться
+              методологии <b>БЭМ</b>. Сейчас изучаю нативный JavaScript.</p>
           </div>
           <ul class="skill__list">
             <li class="skill__item skill__card">
               <img src="" alt="">
-              <h3>Photoshop</h3>
+              <h3>HTML</h3>
             </li>
             <li class="skill__item skill__card">
               <img src="" alt="">
-              <h3>Illustarator</h3>
+              <h3>CCS</h3>
             </li>
             <li class="skill__item skill__card">
               <img src="" alt="">
-              <h3>Keynote</h3>
+              <h3>JavaScript</h3>
             </li>
             <li class="skill__item skill__card">
               <img src="" alt="">
-              <h3>Axure</h3>
+              <h3>Vue or React</h3>
             </li>
           </ul>
         </div>
@@ -161,24 +166,79 @@
       </ul>
     </section>
 
-    <section class="works">
+    <section class="works" id="works">
       <div class="wrapper">
-        <h3 class="works__subtitle subtitle">portfolio</h3>
+        <h3 class="works__subtitle subtitle">Мои работы</h3>
         <h2 class="works__title title">featured works</h2>
         <div class="works__list">
           <article class="works__item project">
-            <img class="project__img" src="img/coming-soon.jpeg" alt="Скоро будет новый проект">
+            <img class="project__img" src="img/zak.png" alt="Скоро будет новый проект">
             <div class="project__info">
-              <h4 class="project__title">Title</h4>
-              <p class="project__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur excepturi
-                molestiae explicabo ad!</p>
+              <h4 class="project__title">Тестовое задание №2</h4>
+              <p class="project__desc">В виде тестового задания, реализация первых 16 пунктов (шапка, подвал, контентное
+                содержимое главной).</p>
             </div>
-            <a href="#" target="_blank" class="project__link" type="button">
+            <a href="https://umka32.github.io/testZak/" target="_blank" class="project__link">
               <svg width="28" height="28">
                 <use xlink:href="img/icons/sprite.svg#icon-link"></use>
               </svg>
             </a>
-            <a class="project__view" type="button">
+            <a href="https://docs.google.com/document/d/12INcW-VIn2lIvTjRqS2yx83PXEQWovxCMTTh05vuxHE/edit?usp=sharing"
+              target="_blank" class="project__view">
+              <svg width="28" height="28">
+                <use xlink:href="img/icons/sprite.svg#icon-view"></use>
+              </svg>
+            </a>
+          </article>
+          <article class="works__item project">
+            <img class="project__img" src="img/cat-energy.png" alt="Фото проекта Cat Energy">
+            <div class="project__info">
+              <h4 class="project__title">Демо проект Cat Energy</h4>
+              <p class="project__desc">Проект верстается по макету в образовательных целях.</p>
+            </div>
+            <a href="https://umka32.github.io/carEnergy/" target="_blank" class="project__link">
+              <svg width="28" height="28">
+                <use xlink:href="img/icons/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="https://www.figma.com/file/vloLeo1Tr9mccetNK50n2x/HTML-2-%D0%9A%D1%8D%D1%82-%D1%8D%D0%BD%D0%B5%D1%80%D0%B4%D0%B6%D0%B8-%D0%9A%D0%BE%D0%BF%D0%B8%D1%8F-Copy?node-id=92%3A200"
+              target="_blank" class="project__view">
+              <svg width="28" height="28">
+                <use xlink:href="img/icons/sprite.svg#icon-view"></use>
+              </svg>
+            </a>
+          </article>
+          <article class="works__item project">
+            <img class="project__img" src="img/level-up.png" alt="Тестовое задание для компании">
+            <div class="project__info">
+              <h4 class="project__title">Тестовое задание</h4>
+              <p class="project__desc">Сверстать адаптивный для любых устройств лендинг, состоящий из 5 блоков. Красиво
+                оформить его с помощью css.</p>
+            </div>
+            <a href="https://umka32.github.io/Test_teamLead/" target="_blank" class="project__link">
+              <svg width="28" height="28">
+                <use xlink:href="img/icons/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="https://docs.google.com/document/d/1qQADLEbi4K5CdgeKOPqJChWtzbc9qWVIvOuGgRwriAM/edit?usp=sharing"
+              target="_blank" class="project__view">
+              <svg width="28" height="28">
+                <use xlink:href="img/icons/sprite.svg#icon-view"></use>
+              </svg>
+            </a>
+          </article>
+          <article class="works__item project">
+            <img class="project__img" src="img/luxrem.png" alt="Фото информационного сайта для ремонта обуви">
+            <div class="project__info">
+              <h4 class="project__title">Сайт для ремонта обуви «Люкс»</h4>
+              <p class="project__desc">Мой первый проект после начала обучения писал вначале июня</p>
+            </div>
+            <a href="http://luxrem32.ru" target="_blank" class="project__link">
+              <svg width="28" height="28">
+                <use xlink:href="img/icons/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="coming-soon.html" class="project__view">
               <svg width="28" height="28">
                 <use xlink:href="img/icons/sprite.svg#icon-view"></use>
               </svg>
@@ -187,16 +247,15 @@
           <article class="works__item project">
             <img class="project__img" src="img/coming-soon.jpeg" alt="Скоро будет новый проект">
             <div class="project__info">
-              <h4 class="project__title">Title</h4>
-              <p class="project__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur excepturi
-                molestiae explicabo ad!</p>
+              <h4 class="project__title">Верстка будующего проекта</h4>
+              <p class="project__desc">Будет интересно</p>
             </div>
-            <a href="#" target="_blank" class="project__link" type="button">
+            <a href="#" target="_blank" class="project__link project__link--disabled">
               <svg width="28" height="28">
                 <use xlink:href="img/icons/sprite.svg#icon-link"></use>
               </svg>
             </a>
-            <a class="project__view" type="button">
+            <a class="project__view project__view--disabled">
               <svg width="28" height="28">
                 <use xlink:href="img/icons/sprite.svg#icon-view"></use>
               </svg>
@@ -205,70 +264,15 @@
           <article class="works__item project">
             <img class="project__img" src="img/coming-soon.jpeg" alt="Скоро будет новый проект">
             <div class="project__info">
-              <h4 class="project__title">Title</h4>
-              <p class="project__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur excepturi
-                molestiae explicabo ad!</p>
+              <h4 class="project__title">Верстка будующего проекта</h4>
+              <p class="project__desc">Будет интересно</p>
             </div>
-            <a href="#" target="_blank" class="project__link" type="button">
+            <a href="#" target="_blank" class="project__link project__link--disabled">
               <svg width="28" height="28">
                 <use xlink:href="img/icons/sprite.svg#icon-link"></use>
               </svg>
             </a>
-            <a class="project__view" type="button">
-              <svg width="28" height="28">
-                <use xlink:href="img/icons/sprite.svg#icon-view"></use>
-              </svg>
-            </a>
-          </article>
-          <article class="works__item project">
-            <img class="project__img" src="img/coming-soon.jpeg" alt="Скоро будет новый проект">
-            <div class="project__info">
-              <h4 class="project__title">Title</h4>
-              <p class="project__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur excepturi
-                molestiae explicabo ad!</p>
-            </div>
-            <a href="#" target="_blank" class="project__link" type="button">
-              <svg width="28" height="28">
-                <use xlink:href="img/icons/sprite.svg#icon-link"></use>
-              </svg>
-            </a>
-            <a class="project__view" type="button">
-              <svg width="28" height="28">
-                <use xlink:href="img/icons/sprite.svg#icon-view"></use>
-              </svg>
-            </a>
-          </article>
-          <article class="works__item project">
-            <img class="project__img" src="img/coming-soon.jpeg" alt="Скоро будет новый проект">
-            <div class="project__info">
-              <h4 class="project__title">Title</h4>
-              <p class="project__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur excepturi
-                molestiae explicabo ad!</p>
-            </div>
-            <a href="#" target="_blank" class="project__link" type="button">
-              <svg width="28" height="28">
-                <use xlink:href="img/icons/sprite.svg#icon-link"></use>
-              </svg>
-            </a>
-            <a class="project__view" type="button">
-              <svg width="28" height="28">
-                <use xlink:href="img/icons/sprite.svg#icon-view"></use>
-              </svg>
-            </a>
-          </article>
-          <article class="works__item project">
-            <img class="project__img" src="img/coming-soon.jpeg" alt="Скоро будет новый проект">
-            <div class="project__info">
-              <h4 class="project__title">Title</h4>
-              <p class="project__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur excepturi
-                molestiae explicabo ad!</p>
-            </div>
-            <a href="#" target="_blank" class="project__link" type="button">
-              <svg width="28" height="28">
-                <use xlink:href="img/icons/sprite.svg#icon-link"></use>
-              </svg>
-            </a>
-            <a class="project__view" type="button">
+            <a class="project__view project__view--disabled">
               <svg width="28" height="28">
                 <use xlink:href="img/icons/sprite.svg#icon-view"></use>
               </svg>
@@ -345,16 +349,14 @@
       </article>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="contacts__info">
         <div class="wrapper contacts__wrapper">
           <div class="wrapper__text">
-            <h3 class="contacts__subtitle subtitle">contact</h3>
-            <h2 class="contacts__title title">get in touch</h2>
-            <p class="contacts__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus omnis, labore,
-              reprehenderit molestias sapiente consectetur saepe voluptate quos, consequuntur at numquam? Aut architecto
-              est
-              beatae mollitia tempora esse sed pariatur!</p>
+            <h3 class="contacts__subtitle subtitle">Контакты</h3>
+            <h2 class="contacts__title title">Связаться</h2>
+            <p class="contacts__desc">Сейчас в&nbsp;активном поиске коммерческого опыта! Если у&nbsp;Вас есть готовый
+              макет вашего проекта, пишите буду рад сотрудничеству!</p>
           </div>
           <form class="contacts__form communication" action="#" method="POST">
             <h4 class="communication__title">Остались вопросы?</h4>
@@ -376,7 +378,7 @@
       </div>
       <div class="wrapper contacts-social">
         <div class="wrapper__text">
-          <h2 class="contacts-social__title title">social media</h2>
+          <h2 class="contacts-social__title title">Социальные сети</h2>
           <p class="contacts-social__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <ul class="contacts-social__list social__list">
@@ -422,15 +424,15 @@
         </div>
         <nav class="main-nav footer-top__nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#">Aboute</a></li>
-            <li class="main-nav__item"><a href="#">Service</a></li>
-            <li class="main-nav__item"><a href="#">Портфолио</a></li>
-            <li class="main-nav__item"><a href="#">Блог</a></li>
-            <li class="main-nav__item"><a href="#">Контакты</a></li>
+            <li class="main-nav__item main-nav__item--disabled"><a href="#">Aboute</a></li>
+            <li class="main-nav__item main-nav__item--disabled"><a href="#">Service</a></li>
+            <li class="main-nav__item"><a href="#works">Портфолио</a></li>
+            <li class="main-nav__item main-nav__item--disabled"><a href="#">Блог</a></li>
+            <li class="main-nav__item"><a href="#contacts">Контакты</a></li>
           </ul>
         </nav>
         <div class="page-footer__contacts">
-          <h2 class="subtitle">contact</h2>
+          <h2 class="subtitle">Контакты</h2>
           <p>
             <a class="footer-top__email" href="mailto:matan32@mail.ru">ymanety@gmail.com</a>
           </p>

@@ -43,6 +43,9 @@
 .project__img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  height: 239px;
+  width: 359px;
+  object-fit: cover;
 }
 
 .project__info {
@@ -54,7 +57,6 @@
 .project__title {
   margin: 0 0 10px 0;
   color: @basic-white;
-  text-transform: capitalize;
   font: inherit;
   font-weight: 700;
   font-size: 18px;
@@ -73,5 +75,11 @@
   &:hover,
   &:focus {
     opacity: 0.6;
+  }
+
+  &--disabled {
+    pointer-events: none;
+    cursor: default;
+    fill: @basic-grey;
   }
 }
