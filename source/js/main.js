@@ -16,6 +16,7 @@ loadMore.addEventListener("click", function () {
   const works = document.querySelectorAll(".works__item--hidden");
   let i = 0;
   let a = works.length
+
   for (work of works) {
     if (i < 3) {
       work.classList.remove("works__item--hidden");

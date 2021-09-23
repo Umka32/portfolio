@@ -54,7 +54,7 @@
   }
 }
 
-.skill__card {
+.skill-card {
   background-color: @basic-white;
   text-align: center;
   border-radius: 10px;
@@ -78,6 +78,10 @@
   }
 }
 
+.skill__item {
+  padding: 20px 0;
+}
+
 //Statictics blocks
 
 .stat__list {
@@ -91,10 +95,16 @@
   }
 }
 
+.card__title {
+  text-transform: unset;
+  margin: 0;
+  color: @basic-grey;
+}
+
 .stat__item {
   text-align: center;
   width: 150px;
-  margin: 0 auto;
+  margin: 10px auto;
 
   @media (min-width: @tablet-width) {
     width: 100px;
@@ -109,4 +119,69 @@
 
 .stat__desc {
   color: @basic-grey;
+}
+
+//progress skill
+
+.skill-card__circle {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.skill-card__progress-bar {
+  width: 80px;
+  height: 80px;
+}
+
+.progress-bar__bg {
+  fill: none;
+  stroke-width: 6px;
+  stroke: @basic-light-grey;
+}
+
+.progress-bar {
+  fill: none;
+  stroke-width: 6px;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.progress-bar--html {
+  stroke: @basic-purpule;
+  stroke-dasharray: 280.36;
+  stroke-dashoffset: 85;
+  // animation: one 2.5s ease-in-out, appear 1s;
+}
+
+.progress-bar--css {
+  stroke: @basic-orange;
+  stroke-dasharray: 255.36;
+  stroke-dashoffset: 80;
+}
+
+.progress-bar--javascript {
+  stroke: @basic-red;
+  stroke-dasharray: 157.36;
+  stroke-dashoffset: 80;
+}
+
+.progress-bar--vue {
+  stroke: none;
+  stroke-dasharray: 120.36;
+  stroke-dashoffset: 80;
+}
+
+.skill-card__text {
+  position: absolute;
+  width: 100%;
+  top: 32px;
+  font: inherit;
+  text-align: center;
+  font-weight: 900;
+  line-height: 16px;
+  margin: 0;
 }
